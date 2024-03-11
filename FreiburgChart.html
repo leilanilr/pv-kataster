@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Freiburg im Breisgau Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="chart"></div>
+
+    <script>
+      var options = {
+        title: {
+          text: "Freiburg in Breisgau: Chart",
+          align: "left",
+          style: {
+            fontSize: "16px",
+            fontWeight: "bold",
+          },
+        },
+        series: [
+          {
+            name: "Bruttoleistung der Einheit",
+            data: [
+              319,
+              1881,
+              149,
+              725,
+              2082,
+              16098,
+              1681,
+              6925,
+              2723,
+              794,
+              3264,
+              1798,
+              3839,
+              450,
+              97,
+              65,
+            ],
+          },
+          {
+            name: "Nettonennleistung",
+            data: [
+              298,
+              1606,
+              129,
+              667,
+              1842,
+              14546,
+              1486,
+              6616,
+              2523,
+              702,
+              3045,
+              1734,
+              3577,
+              432,
+              84,
+              58,
+            ],
+          },
+          {
+            name: "Anzahl der Module",
+            data: [
+              1572,
+              9312,
+              1379,
+              3061,
+              8383,
+              70228,
+              9147,
+              32295,
+              13711,
+              4118,
+              13531,
+              8882,
+              13750,
+              1516,
+              608,
+              239,
+            ],
+          },
+        ],
+
+        chart: {
+          type: "bar",
+          height: 650,
+          stacked: true,
+          toolbar: {
+            show: true,
+          },
+          zoom: {
+            enabled: true,
+          },
+        },
+        responsive: [
+          {
+            breakpoint: 380,
+            options: {
+              legend: {
+                position: "bottom",
+                offsetX: -10,
+                offsetY: 0,
+              },
+            },
+          },
+        ],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10,
+            dataLabels: {
+              total: {
+                enabled: false,
+                style: {
+                  fontSize: "13px",
+                  fontWeight: 900,
+                },
+              },
+            },
+          },
+        },
+        xaxis: {
+          type: "postleitzahl",
+          categories: [
+            "79098",
+            "79100",
+            "79102",
+            "79104",
+            "79106",
+            "79108",
+            "79110",
+            "79111",
+            "79112",
+            "79114",
+            "79115",
+            "79206",
+            "79224",
+            "79227",
+            "79254",
+          ],
+          tickPlacement: "on",
+          title: {
+            text: "Postleitzahl", // replace with your actual title
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: "#78909C",
+              fontSize: "12px",
+              fontFamily: "Helvetica, Arial, sans-serif",
+              fontWeight: 600,
+              cssClass: "apexcharts-xaxis-title",
+            },
+          },
+        },
+        legend: {
+          position: "right",
+          offsetY: 40,
+        },
+        fill: {
+          opacity: 1,
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+  </body>
+</html>

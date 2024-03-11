@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stuttgart Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="chart"></div>
+
+    <script>
+      var options = {
+        title: {
+          text: "Stuttgart: Chart",
+          align: "left",
+          style: {
+            fontSize: "16px",
+            fontWeight: "bold",
+          },
+        },
+        series: [
+          {
+            name: "Bruttoleistung der Einheit",
+            data: [
+              1446,
+              3903,
+              1861,
+              1042,
+              2183,
+              5685,
+              1880,
+              1540,
+              1714,
+              1199,
+              //  5391,
+            ],
+          },
+          {
+            name: "Nettonennleistung",
+            data: [
+              1361,
+              3422,
+              1792,
+              935,
+              1958,
+              5106,
+              1678,
+              1408,
+              1548,
+              1111,
+              //  5017,
+            ],
+          },
+          {
+            name: "Anzahl der Module",
+            data: [
+              5572,
+              17087,
+              6991,
+              4777,
+              7203,
+              23992,
+              7289,
+              6181,
+              6477,
+              3952,
+              // 28349,
+            ],
+          },
+        ],
+
+        chart: {
+          type: "bar",
+          height: 650,
+          stacked: true,
+          toolbar: {
+            show: true,
+          },
+          zoom: {
+            enabled: true,
+          },
+        },
+        responsive: [
+          {
+            breakpoint: 380,
+            options: {
+              legend: {
+                position: "bottom",
+                offsetX: -10,
+                offsetY: 0,
+              },
+            },
+          },
+        ],
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            borderRadius: 10,
+            dataLabels: {
+              total: {
+                enabled: false,
+                style: {
+                  fontSize: "13px",
+                  fontWeight: 900,
+                },
+              },
+            },
+          },
+        },
+        xaxis: {
+          type: "postleitzahl",
+          categories: [
+            "70188",
+            "70327",
+            "70372",
+            "70376",
+            "70469",
+            "70499",
+            "70565",
+            "70567",
+            "70597",
+            "70629",
+            // "70771",
+          ],
+          tickPlacement: "on",
+          title: {
+            text: "Postleitzahl", // replace with your actual title
+            offsetX: 0,
+            offsetY: 0,
+            style: {
+              color: "#78909C",
+              fontSize: "12px",
+              fontFamily: "Helvetica, Arial, sans-serif",
+              fontWeight: 600,
+              cssClass: "apexcharts-xaxis-title",
+            },
+          },
+        },
+        legend: {
+          position: "right",
+          offsetY: 40,
+        },
+        fill: {
+          opacity: 1,
+        },
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
+  </body>
+</html>

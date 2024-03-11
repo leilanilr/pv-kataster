@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Einleitung</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropbtn {
+        background-color: #664caf;
+        color: rgb(243, 235, 235); 
+        padding: 8px; 
+        font-size: 14px; 
+        border: none; 
+        cursor: pointer; 
+        font-family: Optima, sans-serif; 
+      }
+
+      .dropdown-content a {
+        color: rgba(22, 24, 17, 0.76); 
+        padding: 0px 0px;
+        text-decoration: none;
+        display: block;
+        font-family: Optima, sans-serif; 
+        font-size: 13px;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41; 
+      }
+
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .header {
+        background: #50a3a2;
+        color: white;
+        padding-top: 30px; 
+        min-height: 70px;
+        border-bottom: #e8491d 3px solid;
+      }
+      .header h1, .header h5{
+        text-align: center;
+        margin: 0;
+      }
+      
+      .small-header {
+        background-image: url("solar.jpg"); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
+        padding-top: 20px; 
+        min-height: 30px; 
+        display: flex; 
+        justify-content: flex-start; 
+        align-items: center; 
+      }
+      .content {
+        padding: 16px;
+      }
+      .city-buttons {
+     margin-left: auto;  
+      display: flex;
+      background-size: cover;
+      gap: 10px; 
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Photovoltaikanlage für Baden-Württemberg</h1>
+        <h5>Hochschule für Technik (Geo-visualisierung) Vorgelegt von: Leilani Riehmann</h5>
+      </div>
+       
+      <div class="content">
+        <div class="small-header">
+          <p style="margin-right: 10px;"><h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#023d04">Baden-Württemberg und ausgewählte Ortsteile</h4</p>
+
+            <div class="dropdown">
+              <button class="dropbtn">Baden-Württemberg</button>
+              <div class="dropdown-content">
+                <a href="BW_map.html"><h3>interaktive Karte</h3></a>
+                <a href="BWPopUp.html"><h3>Karte mit PopUp</h3></a>
+            
+              </div>
+            </div>
+           <div class="dropdown">
+            <button class="dropbtn">Stuttgart</button>
+            <div class="dropdown-content">
+              <a href="Stuttgart_Map.html"><h3>Karte</h3></a>
+              <a href="Stuggi.html"><h3>Karte mit PopUp</h3></a>
+              <a href="MapChartStuttgart.html"><h3>Karte & Graph</h3></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Freiburg</button>
+            <div class="dropdown-content">
+              <a href="Freiburg_map.html"><h3>Karte</h3></a>
+              <a href="FreiburgChart.html"><h3>Graph</h3></a>
+              <a href="MapChartFreiburg.html"><h3>Karte & Graph</h3></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Mannheim</button>
+            <div class="dropdown-content">
+              <a href="Mannheim_Map.html"><h3>Karte</h3></a>
+              <a href="MannheimChart.html"><h3>Graph</h3></a>
+              <a href="MapChartMannheim.html"><h3>Karte & Graph</h3></a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Karlsruhe</button>
+            <div class="dropdown-content">
+              <a href="Karlsruhe_Map.html"><h3>Karte</h3></a>
+              <a href="KarlsruheChart.html"><h3>Graph</h3></a>
+              <a href="MapChartKarlsruhe.html"><h3>Karte & Graph</h3></a>
+            </div>
+          </div>
+
+        </div>
+        <br />
+        <br />
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#3e8e41">Choroplethenkarte</h2>
+        <p>
+          Dieses Projekt zielt darauf ab, die installierte PV-Leistung für <strong>Baden
+          Württemberg</strong> <br />pro Postleitzahlregion als Choropletenkarte zu
+          visualisieren.
+        </p>
+
+        <p>
+          Eine <strong>Choroplethenkarte</strong> ist eine thematische Karte, bei der die Gebiete
+          im Verhältnis zur <br />Verteilungsdichte 
+          des thematischen Objektes eingefärbt, schattiert, gepunktet oder
+          schraffiert sind. <br />In diesem Projekt repräsentiert die Farbe der
+          Karte die installierte PV-Leistung pro Postleitzahlregion.
+        </p>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#3e8e41">Wie man die Karte verwendet</h2>
+        <p>
+          Um die Karte zu verwenden, fahren Sie mit der Maus über die
+          verschiedenen Regionen. <br />Ein Popup-Fenster wird angezeigt, das
+          Informationen über die installierte PV-Leistung <br /><strong>(Brutto und Netto)</strong> für die jeweilige
+          Ortsteil enthält. Sie können auch auf die ausgewählte <br /> Ortsteile klicken, um die Karte 
+          und den Graph anzusehen auf diese Region zu zoomen.
+        </p>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#3e8e41">kWp: Kilowatt-Peak</h2>
+        <p>
+          <strong>kWp</strong> steht für <strong>Kilowatt-Peak</strong> und ist ein Maß für die Spitzenleistung, 
+          die eine Photovoltaikanlage unter<br /> Standard-Testbedingungen erreichen kann. 
+          Es gibt an, welche Höchstleistung in Kilowatt (kW)<br /> eine Photovoltaikanlage 
+          erbringen kann, typischerweise gemessen unter festgelegten Bedingungen<br /> 
+          wie einer bestimmten Sonneneinstrahlung und Temperatur. Diese Bedingungen 
+          werden <br />als <strong>Standard-Testbedingungen (STC)</strong> bezeichnet.
+        </p>
+        <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#3e8e41">Die Berechnung</h2>
+        <p>
+          Die Berechnung der kWp einer Photovoltaikanlage erfolgt:</br>
+          Zum Beispiel:  12 Module mit einer Leistung von jeweils 400:
+          <p>
+          <strong>Anlagenleistung</strong> = Anzahl der Module * Leistung eines Moduls</br>
+          <br />
+          <strong>Anlagenleistung</strong> = 12 * 400 Wp = 4800 Wp oder 4,8 kWp
+    
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
