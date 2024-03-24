@@ -1,4 +1,5 @@
-# Choroplethenkarte
+#Einleitung
+## Choroplethenkarte
 Dieses Projekt zielt darauf ab, die installierte PV-Leistung für Baden Württemberg
 pro Postleitzahlregion als Choropletenkarte zu visualisieren.
 
@@ -11,6 +12,10 @@ Um die Karte zu verwenden, fahren Sie mit der Maus über die verschiedenen Regio
 Ein Popup-Fenster wird angezeigt, das Informationen über die installierte PV-Leistung
 (Brutto und Netto) für die jeweilige Ortsteil enthält. Sie können auch auf die ausgewählte
 Ortsteile klicken, um die Karte und den Graph anzusehen auf diese Region zu zoomen. 
+
+## Verwendete Tools
+- QGIS: Für die Erstellung und Verwaltung von GeoDaten.
+- Leaflet: Eine Open-Source-JavaScript-Bibliothek für interaktive Karten 
 ![Screenshot 2024-03-24 072242](https://github.com/leilanilr/pv-kataster/assets/161704838/5bb7ad3f-22e2-4337-8f0f-dfa32c180f9d)
 ![Screenshot 2024-03-24 072346](https://github.com/leilanilr/pv-kataster/assets/161704838/d15bbfff-81a6-4c9d-8063-cc65255f044b)
 ![Screenshot 2024-03-24 072422](https://github.com/leilanilr/pv-kataster/assets/161704838/51b44f04-d0e1-4879-9879-3f2345f3e5ac)
