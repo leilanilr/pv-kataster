@@ -15,7 +15,8 @@ Ortsteile klicken, um die Karte und den Graph anzusehen auf diese Region zu zoom
 
 ## Verwendete Tools
 - QGIS: Für die Erstellung und Verwaltung von GeoDaten.
-- Leaflet: Eine Open-Source-JavaScript-Bibliothek für interaktive Karten
+- Leaflet: Eine Open-Source-JavaScript-Bibliothek für interaktive Karten.
+- ApexCharts: Eine JavaScript-Bibliothek für die Erstellung interaktiver Diagrmme und Charts.
 
   
 ![Screenshot 2024-03-24 072242](https://github.com/leilanilr/pv-kataster/assets/161704838/5bb7ad3f-22e2-4337-8f0f-dfa32c180f9d)
