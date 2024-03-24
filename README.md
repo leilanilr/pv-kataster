@@ -1,4 +1,4 @@
-Choroplethenkarte
+# Choroplethenkarte
 Dieses Projekt zielt darauf ab, die installierte PV-Leistung für Baden Württemberg
 pro Postleitzahlregion als Choropletenkarte zu visualisieren.
 
